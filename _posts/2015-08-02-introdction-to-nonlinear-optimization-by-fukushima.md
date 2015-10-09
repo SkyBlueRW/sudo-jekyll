@@ -250,7 +250,7 @@ u_i - t & & u_i \geq t \\
 u_i + t & & u_i \geq t
 \end{cases}\\]
 
- ![{{ "/assets/img/fukushima-softthresholding.jpg" | prepend: site.baseurl | prepend: site.url }}]()
+ ![]({{ "/assets/img/fukushima-softthresholding.jpg" | prepend: site.baseurl | prepend: site.url }})
 
 ### 2. Dual Proximal Gradient Methods ###
 
@@ -410,7 +410,7 @@ first iteration (\\(k = 1\\)) is a proximal gradient step at \\(y = x^{(0)}\\)
 
 next iterations are proximal gradient steps at extrapolated points \\(y\\)
 
-![{{ "/assets/img/fukushima-interpretation.png" | prepend: site.baseurl | prepend: site.url }}]()
+![]({{ "/assets/img/fukushima-interpretation.png" | prepend: site.baseurl | prepend: site.url }})
 
 note: \\(x^{(k)}\\) is feasible (in \\(\mathop{dom} h\\)); \\(y\\) may be outside \\(\mathop{dom} h\\)
 
