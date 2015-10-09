@@ -36,13 +36,13 @@ categories:
 给定函数 \\(f : \Re^n \to [-\infty, +\infty] \\)，称 \\(\Re^{n+1}\\) 的子集
 
 \\[
-graph \; f = \{ (\mathbf{x}, \beta)^T \in \Re^{n+1} \mid \beta = f(\mathbf{x}) \} ,
+graph \; f = \lbrace{} (\mathbf{x}, \beta)^T \in \Re^{n+1} \mid \beta = f(\mathbf{x}) \rbrace{} ,
 \\]
 
 为 \\(f\\) 的**图像**（graph），而称位于 \\(f\\) 的图像上方的点的全体构成的集合
 
 \\[
-epi \; f =\left\{ ({\mathbf{}x}, \beta)^T \in \Re^{n+1} \mid \beta \geqslant f({\mathbf{}x}) \right\}
+epi \; f =\lbrace{} ({\mathbf{}x}, \beta)^T \in \Re^{n+1} \mid \beta \geqslant f({\mathbf{}x}) \rbrace{}
 \\]
 
 为 \\(f\\) 的**上图**（epigraph）。若上图 \\(epi \; f\\) 为凸集，则称 \\(f\\) 为**凸函数**(convex function)。
@@ -50,12 +50,12 @@ epi \; f =\left\{ ({\mathbf{}x}, \beta)^T \in \Re^{n+1} \mid \beta \geqslant f({
 **定理 2.27** 设 \\( \mathcal{I} \\) 为任意非空指标集，而 \\(f_i : \Re^n \to [-\infty, +\infty] \; (i \in \mathcal{I})\\) 均为凸函数，则由
 
 \\[
-f({\mathbf{}x}) = \sup \left\{ f_i({\mathbf{}x}) \mid i \in \mathcal{I} \right\}
+f({\mathbf{}x}) = \sup \lbrace{} f_i({\mathbf{}x}) \mid i \in \mathcal{I} \rbrace{}
 \\]
 
 定义的函数 \\(f : \Re^n \to [-\infty, +\infty] \\) 为凸函数。进一步，若 \\(\mathcal{I}\\) 为有限指标集，每个 \\(f_i\\) 均为正常的凸函数，并且 \\(\cap_{i \in \mathcal{I}} \; dom \; f_i \neq \varnothing \\)，则 \\(f\\) 为正常凸函数。
 
-若对任意收敛于 \\({\mathbf{}x}\\) 的点列 \\(\{ {\mathbf{}x}^k\} \subseteq \Re^n\\) 均有
+若对任意收敛于 \\({\mathbf{}x}\\) 的点列 \\(\lbrace{} {\mathbf{}x}^k\rbrace{} \subseteq \Re^n\\) 均有
 
 \\[ f({\mathbf{}x}) \geqslant \limsup_{k \to \infty}f({\mathbf{}x}^k) \\]
 
@@ -69,7 +69,7 @@ f({\mathbf{}x}) = \sup \left\{ f_i({\mathbf{}x}) \mid i \in \mathcal{I} \right\}
 
 给定正常凸函数 \\(f:\Re^n \to (-\infty,+\infty]\\)，由
 
-\\[f^\ast({\mathbf{}\xi}) = \sup \left\{ \lt{}{\mathbf{}x},{\mathbf{}\xi}\gt{}-f({\mathbf{}x}) \mid {\mathbf{}x}\in \Re^n \right\} \\]
+\\[f^\ast({\mathbf{}\xi}) = \sup \lbrace{} \lt{}{\mathbf{}x},{\mathbf{}\xi}\gt{}-f({\mathbf{}x}) \mid {\mathbf{}x}\in \Re^n \rbrace{} \\]
 
 定义的函数 \\(f^\ast:\Re^n \to [-\infty,+\infty]\\) 称为 \\(f\\) 的**共轭函数**（conjuagate function）。
 
@@ -79,20 +79,20 @@ f({\mathbf{}x}) = \sup \left\{ f_i({\mathbf{}x}) \mid i \in \mathcal{I} \right\}
 
 设 \\(Y\\) 与 \\(Z\\) 分别为 \\(\Re^n\\) 与 \\(\Re^m\\) 的非空子集，给定以 \\(Y\times Z\\) 为定义域的函数 \\(K:Y\times Z\to[-\infty,+\infty]\\)，定义两个函数 \\(\eta:Y\to[-\infty,+\infty]\\) 与 \\(\zeta:Z\to[-\infty,+\infty]\\) 如下：
 
-\\[\eta({\mathbf{}y})=\sup\left\{ K({\mathbf{}y},{\mathbf{}z}) \mid {\mathbf{}z} \in Z\right\} \\]
+\\[\eta({\mathbf{}y})=\sup\lbrace{} K({\mathbf{}y},{\mathbf{}z}) \mid {\mathbf{}z} \in Z\rbrace{} \\]
 
-\\[\zeta({\mathbf{}z})=\inf\left\{ K({\mathbf{}y},{\mathbf{}z}) \mid {\mathbf{}y} \in Y\right\} \\]
+\\[\zeta({\mathbf{}z})=\inf\lbrace{} K({\mathbf{}y},{\mathbf{}z}) \mid {\mathbf{}y} \in Y\rbrace{} \\]
 
 \\[\min \; \; \eta({\mathbf{}y})\\s.t. \; \; \; {\mathbf{}y} \in Y\\]
 
 \\[\max \; \; \zeta({\mathbf{}z})\\s.t. \; \; \; {\mathbf{}z} \in Z\\]
 
 **引理 4.1** 对任意 \\({\mathbf{}y}\in Y\\) 与 \\({\mathbf{}z}\in Z\\) 均有 \\(\zeta({\mathbf{}z}) \leqslant \eta({\mathbf{}y})\\) 成立。进一步，还有
-\\[\sup\left\{ \zeta({\mathbf{}z})\mid {\mathbf{}z}\in Z\right\} \leqslant \inf\left\{ \eta({\mathbf{}y})\mid {\mathbf{}y} \in Y\right\} \\]
+\\[\sup\lbrace{} \zeta({\mathbf{}z})\mid {\mathbf{}z}\in Z\rbrace{} \leqslant \inf\lbrace{} \eta({\mathbf{}y})\mid {\mathbf{}y} \in Y\rbrace{} \\]
 
 **定理 4.1** 点 \\((\bar{\mathbf{}y},\bar{\mathbf{}z})\in Y\times Z\\) 为函数 \\(K:Y\times Z\to[-\infty,+\infty]\\) 的鞍点的充要条件是 \\(\bar{\mathbf{}y}\in Y\\) 与 \\(\bar{\mathbf{}z}\in Z\\) 满足
 
-\\[\eta(\bar{\mathbf{}y})=\inf\left\{ \eta({\mathbf{}y})\mid {\mathbf{}y}\in Y\right\} =\sup\left\{ \zeta({\mathbf{}z})\mid {\mathbf{}z}\in Z\right\} =\zeta(\bar{\mathbf{}z})\\]
+\\[\eta(\bar{\mathbf{}y})=\inf\lbrace{} \eta({\mathbf{}y})\mid {\mathbf{}y}\in Y\rbrace{} =\sup\lbrace{} \zeta({\mathbf{}z})\mid {\mathbf{}z}\in Z\rbrace{} =\zeta(\bar{\mathbf{}z})\\]
 
 ### Lagrange 对偶问题 ###
 
@@ -102,7 +102,7 @@ f({\mathbf{}x}) = \sup \left\{ f_i({\mathbf{}x}) \mid i \in \mathcal{I} \right\}
 
 其中 \\(f: \Re^n \to \Re\\), \\(g_i: \Re^n \to \Re (i=1, \cdots, m)\\)。
 
-\\[ S = \left\{ x \in \Re^n \mid g_i({\mathbf{}x}) \leqslant 0 \text{, } \; \; i=1, \cdots, m\right \}\\]
+\\[ S = \lbrace{} x \in \Re^n \mid g_i({\mathbf{}x}) \leqslant 0 \text{, } \; \; i=1, \cdots, m \rbrace{}\\]
 
 \\[ L_0({\mathbf{}x}, {\mathbf{}\lambda}) = \begin{cases}
         f({\mathbf{}x}) + \sum^m_{i=1}\lambda_ig_i({\mathbf{}x})\;, & {\mathbf{}\lambda} \geqslant {\mathbf{}0}\\
@@ -112,9 +112,9 @@ f({\mathbf{}x}) = \sup \left\{ f_i({\mathbf{}x}) \mid i \in \mathcal{I} \right\}
 
 \\[ \theta({\mathbf{}x}) = f({\mathbf{}x}) + \delta_S({\mathbf{}x})\\]
 
-\\[ \theta({\mathbf{}x}) = \sup \left\{ L_0({\mathbf{}x}, {\mathbf{}\lambda}) \mid {\mathbf{}\lambda} \in \Re^m \right\}\\]
+\\[ \theta({\mathbf{}x}) = \sup \lbrace{} L_0({\mathbf{}x}, {\mathbf{}\lambda}) \mid {\mathbf{}\lambda} \in \Re^m \rbrace{}\\]
 
-\\[ \omega_0({\mathbf{}\lambda}) = \inf \left\{ L_0({\mathbf{}x}, {\mathbf{}\lambda}) \mid {\mathbf{}x} \in \Re^n \right\} \\]
+\\[ \omega_0({\mathbf{}\lambda}) = \inf \lbrace{} L_0({\mathbf{}x}, {\mathbf{}\lambda}) \mid {\mathbf{}x} \in \Re^n \rbrace{} \\]
 
 Constrains relax
 
@@ -124,13 +124,13 @@ Constrains relax
     \end{cases}
 \\]
 
-\\[ S({\mathbf{}u}) = \left\{ {\mathbf{}x} \in \Re^n \mid g_i({\mathbf{}x}) \leqslant u_i, \; i=1, \cdots, m \right\} \\]
+\\[ S({\mathbf{}u}) = \lbrace{} {\mathbf{}x} \in \Re^n \mid g_i({\mathbf{}x}) \leqslant u_i, \; i=1, \cdots, m \rbrace{} \\]
 
 **引理 4.5** Lagrange 函数 \\(L_0: \Re^{n+m} \to [-\infty, +\infty) \\) 与函数 \\(F_0: \Re^{n+m} \to (-\infty,+\infty]\\) 之间有如下关系成立：
 
-\\[L_0({\mathbf{}x}, {\mathbf{}\lambda}) = \inf \left\{ F_0({\mathbf{}x}, {\mathbf{}u}) + \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}u} \in \Re^m \right\}\\]
+\\[L_0({\mathbf{}x}, {\mathbf{}\lambda}) = \inf \lbrace{} F_0({\mathbf{}x}, {\mathbf{}u}) + \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}u} \in \Re^m \rbrace{}\\]
 
-\\[F_0({\mathbf{}x}, {\mathbf{}u}) = \sup \left\{ L_0({\mathbf{}x}, {\mathbf{}\lambda}) - \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}\lambda} \in \Re^m \right\}\\]
+\\[F_0({\mathbf{}x}, {\mathbf{}u}) = \sup \lbrace{} L_0({\mathbf{}x}, {\mathbf{}\lambda}) - \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}\lambda} \in \Re^m \rbrace{}\\]
 
 ### Lagrange 对偶性的推广 ###
 
@@ -145,8 +145,8 @@ Constrains relax
 
 \\[ \theta({\mathbf{}x}) = f({\mathbf{}x}) + \delta_S({\mathbf{}x}) \\]
 \\[ \implies F({\mathbf{}x}, {\mathbf{}u}) \mid F({\mathbf{}x}, {\mathbf{}0}) = \theta({\mathbf{}x}) \\]
-\\[ \implies L({\mathbf{}x}, {\mathbf{}\lambda}) = \inf \left\{ F({\mathbf{}x}, {\mathbf{}u}) + \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}u} \in \Re^M \right\} \\]
-\\[ \implies \omega({\mathbf{}\lambda}) = \inf \left\{ L({\mathbf{}x}, {\mathbf{}\lambda}) \mid {\mathbf{}x} \in \Re^n \right\} \\]
+\\[ \implies L({\mathbf{}x}, {\mathbf{}\lambda}) = \inf \lbrace{} F({\mathbf{}x}, {\mathbf{}u}) + \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}u} \in \Re^M \rbrace{} \\]
+\\[ \implies \omega({\mathbf{}\lambda}) = \inf \lbrace{} L({\mathbf{}x}, {\mathbf{}\lambda}) \mid {\mathbf{}x} \in \Re^n \rbrace{} \\]
 
 
 ### Fenchel 对偶性 ###
@@ -157,13 +157,13 @@ Constrains relax
 & \theta({\mathbf{}x}) = f({\mathbf{}x}) + g({\mathbf{}Ax}) & \end{cases} \\]
 
 \\[ \implies F({\mathbf{}x}, {\mathbf{}u}) = f({\mathbf{}x}) + g({\mathbf{}Ax} + {\mathbf{}u}) \\]
-\\[ \begin{eqnarray*} \implies L({\mathbf{}x}, {\mathbf{}\lambda}) & = & \inf \left\{ f({\mathbf{}x}) + g({\mathbf{}Ax} + {\mathbf{}u}) + \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}u} \in \Re^m \right\} \\
+\\[ \begin{eqnarray*} \implies L({\mathbf{}x}, {\mathbf{}\lambda}) & = & \inf \lbrace{} f({\mathbf{}x}) + g({\mathbf{}Ax} + {\mathbf{}u}) + \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}u} \in \Re^m \rbrace{} \\
 & = & f({\mathbf{}x}) - g^\ast(-{\mathbf{}\lambda}) - \lt{}{\mathbf{}\lambda}, {\mathbf{}Ax}\gt{} \end{eqnarray*}\\]
-\\[ \begin{eqnarray*} \implies \omega({\mathbf{}\lambda}) & = & \inf \left\{ f({\mathbf{}x} - g^\ast(-{\mathbf{}\lambda}) - \lt{}{\mathbf{}\lambda}, {\mathbf{}Ax}\gt{} \mid {\mathbf{}x} \in \Re^n \right\} \\
+\\[ \begin{eqnarray*} \implies \omega({\mathbf{}\lambda}) & = & \inf \lbrace{} f({\mathbf{}x} - g^\ast(-{\mathbf{}\lambda}) - \lt{}{\mathbf{}\lambda}, {\mathbf{}Ax}\gt{} \mid {\mathbf{}x} \in \Re^n \rbrace{} \\
 & = & -f^\ast({\mathbf{}A}^T{\mathbf{}\lambda}) - g^\ast(-{\mathbf{}\lambda}) \end{eqnarray*}\\]
 
-\\[ \min_{\mathbf{}\lambda} f^\ast\left( {\mathbf{}A}^T{\mathbf{}\lambda} \right) + g^\ast(-{\mathbf{}\lambda})\\]
-\\[ \max_{\mathbf{}\lambda} -f^\ast\left({\mathbf{}A}^T{\mathbf{}\lambda} \right) - g^\ast\left(-{\mathbf{}\lambda}\right)\\]
+\\[ \min_{\mathbf{}\lambda} f^\ast( {\mathbf{}A}^T{\mathbf{}\lambda} ) + g^\ast(-{\mathbf{}\lambda})\\]
+\\[ \max_{\mathbf{}\lambda} -f^\ast({\mathbf{}A}^T{\mathbf{}\lambda} ) - g^\ast(-{\mathbf{}\lambda})\\]
 
 ## 算法 ##
 
@@ -175,7 +175,7 @@ Constrains relax
 
 The **proximal mapping** (or proximal operator) of a convex function \\(h\\) is
 
-\\[ {\mathbf{}prox}_h(x) = \mathop{argmin}_u \left( h(u) + \frac{1}{2} \|u - x\|^2_2 \right)\\]
+\\[ {\mathbf{}prox}_h(x) = \mathop{argmin}_u ( h(u) + \frac{1}{2} \|u - x\|^2_2 )\\]
 
 **examples**
 
@@ -205,7 +205,7 @@ The **proximal mapping** (or proximal operator) of a convex function \\(h\\) is
 
 **proximal gradient algorithm**
 
-\\[ x^{(k)} = {\mathbf{}prox}_{t_kh} \left( x^{(k-1)} - t_k \nabla g \left( x^{(k-1)} \right) \right) \\]
+\\[ x^{(k)} = {\mathbf{}prox}_{t_kh} ( x^{(k-1)} - t_k \nabla g ( x^{(k-1)} ) ) \\]
 
 \\[ t_k \gt{} 0 \text{ is the step size,}\\]
 
@@ -213,14 +213,14 @@ constant or determined by line search
 
 #### Interpretation ####
 
-\\[ x^+ = {\mathbf{}prox}_{th} \left( x - t\nabla g(x) \right) \\]
+\\[ x^+ = {\mathbf{}prox}_{th} ( x - t\nabla g(x) ) \\]
 
 
 from definition of proximal operator:
 
 \\[ \begin{eqnarray*}
-x^+ & = &  \mathop{argmin}_u \left( h(u) + \frac{1}{2t} \left\| u - x + t\nabla g(x) \right\|^2_2 \right) \\
-    & = & \mathop{argmin}_u \left( h(u) + g(x) + \nabla g(x)^T(u-x) + \frac{1}{2t} \left\| u - x \right\|^2_2 \right)
+x^+ & = &  \mathop{argmin}_u ( h(u) + \frac{1}{2t} \| u - x + t\nabla g(x) \|^2_2 ) \\
+    & = & \mathop{argmin}_u ( h(u) + g(x) + \nabla g(x)^T(u-x) + \frac{1}{2t} \| u - x \|^2_2 )
 \end{eqnarray*}\\]
 
 \\(x^+\\) minimizes \\(h(u)\\) plus a simple quadratic local of \\(g(u)\\) around \\(x\\)
@@ -231,15 +231,15 @@ x^+ & = &  \mathop{argmin}_u \left( h(u) + \frac{1}{2t} \left\| u - x + t\nabla 
 
 **gradient method**: \\(h(x) = 0\\), i.e., minimize g(x)
 
-\\[ x^{(k)} = x^{(k-1)} - t_k\nabla g\left( x^{(k-1)} \right)\\]
+\\[ x^{(k)} = x^{(k-1)} - t_k\nabla g( x^{(k-1)} )\\]
 
 **gradient projection method**: \\(h(x) = I_C(x)\\), i.e., minimize \\(g(x)\\) over \\(C\\)
 
-\\[ x^{(k)} = P_C \left( x^{(k-1)} - t_k\nabla g \left(x^{(k-1)} \right) \right) \\]
+\\[ x^{(k)} = P_C ( x^{(k-1)} - t_k\nabla g (x^{(k-1)} ) ) \\]
 
 **iterative soft-thresholding**: \\(h(x) = \|x\|_1\\), i.e., \\( minimize \; \; g(x)+ \| x \|_1\\)
 
-\\[ x^{(k)} = {\mathbf{}prox}_{t_kh} \left( x^{(k-1)} - t_k\nabla g\left( x^{(k-1)} \right)  \right) \\]
+\\[ x^{(k)} = {\mathbf{}prox}_{t_kh} ( x^{(k-1)} - t_k\nabla g( x^{(k-1)} )  ) \\]
 
 and
 
@@ -260,26 +260,26 @@ u_i + t & & u_i \geq t
 
 \\[ \begin{eqnarray*}
 minimize & & f(x)+g(Ax) \\
-maximize & & -f^\ast \left( -A^Tz \right) - g^\ast(z)
+maximize & & -f^\ast ( -A^Tz ) - g^\ast(z)
 \end{eqnarray*}\\]
 
 dual has the right structure for the proximal gradient method if
 
 prox-operator of \\(g\\) (or \\(g^\ast\\)) is cheap (closed form or simple algorithm)
 
-\\(f\\) is strongly convex (\\(f(x)-(\frac{\mu}{2})x^T\\) is convex) implies \\(f^\ast\left(-A^Tz\right)\\) has Lipschitz continuous gradient (\\(L=\frac{\|A\|^2_2}{\mu}\\)):
+\\(f\\) is strongly convex (\\(f(x)-(\frac{\mu}{2})x^T\\) is convex) implies \\(f^\ast(-A^Tz)\\) has Lipschitz continuous gradient (\\(L=\frac{\|A\|^2_2}{\mu}\\)):
 
-\\[ \left\| A\nabla f^\ast(-A^Tu)-A\nabla f^\ast(-A^Tv) \right\|_2 \leq \frac{\|A\|^2_2}{\mu}\|u-v\|_2 \\]
+\\[ \| A\nabla f^\ast(-A^Tu)-A\nabla f^\ast(-A^Tv) \|_2 \leq \frac{\|A\|^2_2}{\mu}\|u-v\|_2 \\]
 
 because \\(\nabla f^2\\) is Lipschitz continuous with constant \\(\frac{1}{\mu}\\)
 
 #### Dual proximal gradient update ####
 
-\\[ z^+ = prox_{tg\ast}\left( z+tA\nabla f^\ast\left( -A^Tz \right) \right) \\]
+\\[ z^+ = prox_{tg\ast}( z+tA\nabla f^\ast( -A^Tz ) ) \\]
 
 equivalent expression in term of \\(f\\):
 
-\\[ z^+ = prox_{tg\ast}(z+tA\hat{x}) \text{  where } \hat{x} = \mathop{argmin}_x \left( f(x) + z^TAx \right)\\]
+\\[ z^+ = prox_{tg\ast}(z+tA\hat{x}) \text{  where } \hat{x} = \mathop{argmin}_x ( f(x) + z^TAx )\\]
 
 **1.**  if \\(f\\) is separable, calculation of \\(\hat{x}\\) decomposes into independent problems
 
@@ -294,9 +294,9 @@ Moreau decomposition gives alternate expression for \\(z\\)-update
 where
 
 \\[ \begin{eqnarray*}
-\hat{x} & = & \mathop{argmin}_x \left( f(x) + z^TAx \right) \\
-\hat{y} & = & prox_{t^{-1}g} \left( \frac{z}{t} + A\hat{x} \right)        \\
-        & = & \mathop{argmin}_y \left(g(y) + z^T(A\hat{x} - y) + \frac{t}{2} \|A\hat{x} - y\|^2_2  \right)
+\hat{x} & = & \mathop{argmin}_x ( f(x) + z^TAx ) \\
+\hat{y} & = & prox_{t^{-1}g} ( \frac{z}{t} + A\hat{x} )        \\
+        & = & \mathop{argmin}_y (g(y) + z^T(A\hat{x} - y) + \frac{t}{2} \|A\hat{x} - y\|^2_2  )
 \end{eqnarray*}\\]
 
 in each iteration, an alternating minimization of:
@@ -327,7 +327,7 @@ C is unit norm ball for dual norm \\(\|\cdot\|_\ast\\)
 **dual gradient projection update**
 
 \\[ \begin{eqnarray*}
-\hat{x} & = & \mathop{argmin}_x \left( f(x) + z^TAx \right) \\
+\hat{x} & = & \mathop{argmin}_x ( f(x) + z^TAx ) \\
 z^+     & = & P_C(z + t(A\hat{x} - b))
 \end{eqnarray*}\\]
 
@@ -340,7 +340,7 @@ minimize \; \; f(x) + \sum^p_{i=1}\|B_ix\|_2 \text{   (with } f \text{ strongly 
 **dual gradient projection update**
 
 \\[ \begin{eqnarray*}
-\hat{x} & = & \mathop{argmin}_x \left( f(x) + \left(\sum^p_{i=1}B^T_iz_i\right)^Tx \right) \\
+\hat{x} & = & \mathop{argmin}_x ( f(x) + (\sum^p_{i=1}B^T_iz_i)^Tx ) \\
 z^+_i   & = & P_{C_i}(z_i + tB_i\hat{x}) \text{, } \; \; i=1, \cdots, p
 \end{eqnarray*}\\]
 
@@ -360,8 +360,8 @@ sets \\(C_i\\) are closed, convex, and easy to project onto
 **dual proximal gradient update**
 
 \\[ \begin{eqnarray*}
-\hat{x} & = & \mathop{argmin}_x \left( f(x) + (z_i + \cdots + z_m)^Tx \right) \\
-z^+_i   & = & z_i + t\hat{x} - tP_{C_i}\left(\frac{z_i}{t} + \hat{x}\right) \text{, }\; \; i=1, \cdots, m
+\hat{x} & = & \mathop{argmin}_x ( f(x) + (z_i + \cdots + z_m)^Tx ) \\
+z^+_i   & = & z_i + t\hat{x} - tP_{C_i}(\frac{z_i}{t} + \hat{x}) \text{, }\; \; i=1, \cdots, m
 \end{eqnarray*}\\]
 
 #### Decomposition of separable problems ####
@@ -375,8 +375,8 @@ each \\(f_i\\) is strongly convex; \\(g_i\\) has inexpensive prox-operator
 **dual proximal gradient update**
 
 \\[ \begin{eqnarray*}
-\hat{x}_j & = & \mathop{argmin}_{x_j} \left( f_j(x_j) + \sum^m_{i=1}z^T_iA_{ij}x_j \right) \text{, } \; \; j=1, \cdots, n \\
-z^+_i        & = & prox_{tg^\ast_i}\left(z_i + t\sum^n_{j=1}A_{ij}\hat{x}_j \right) \text{, } \; \; i=1, \cdots, m
+\hat{x}_j & = & \mathop{argmin}_{x_j} ( f_j(x_j) + \sum^m_{i=1}z^T_iA_{ij}x_j ) \text{, } \; \; j=1, \cdots, n \\
+z^+_i        & = & prox_{tg^\ast_i}(z_i + t\sum^n_{j=1}A_{ij}\hat{x}_j ) \text{, } \; \; i=1, \cdots, m
 \end{eqnarray*}\\]
 
 ### 3. Fast proximal gradient methods ###
@@ -396,8 +396,8 @@ minimize \; \; f(x) = g(x) + h(x)
 **algorithm**: choose any \\(x^{(0)} = x^{(-1)}\\); for \\(k \geq 1\\), repeat the steps
 
 \\[ \begin{eqnarray*}
-y             & = & x^{(k-1)} + \frac{k-2}{k+1} \left( x^{(k-1)} - x^{(k-2)} \right) \\
-x^{(k)} & = & prox_{t_kh} \left( y - t_k\nabla g(y) \right)
+y             & = & x^{(k-1)} + \frac{k-2}{k+1} ( x^{(k-1)} - x^{(k-2)} ) \\
+x^{(k)} & = & prox_{t_kh} ( y - t_k\nabla g(y) )
 \end{eqnarray*}\\]
 
 step size \\(t_k\\) fixed or determined by line search
@@ -423,7 +423,7 @@ define \\(\theta_k = \frac{2}{k+1}\\) and introduce an intermediate variable \\(
 \\[ \begin{eqnarray*}
 y             & = & (1 - \theta_k)x^{(k-1)} + \theta_kv^{(k-1)} \\
 x^{(k)} & = & prox_{t_kh}(y-t_k\nabla g(y))\\
-v^{(k)} & = & x^{(k - 1)} + \frac{1}{\theta_k}\left( x^{(k)} - x^{(k-1)} \right)
+v^{(k)} & = & x^{(k - 1)} + \frac{1}{\theta_k}( x^{(k)} - x^{(k-1)} )
 \end{eqnarray*}\\]
 
 #### Nesterov's second method ####
@@ -432,7 +432,7 @@ v^{(k)} & = & x^{(k - 1)} + \frac{1}{\theta_k}\left( x^{(k)} - x^{(k-1)} \right)
 
 \\[ \begin{eqnarray*}
 y             & = & (1 - \theta_k)x^{(k-1)} + \theta_kv^{(k-1)} \\
-v^{(k)} & = & prox_{\left(\frac{t_k}{\theta_k}\right)h} \left( v^{(k-1)} - \frac{t_k}{\theta_k}\nabla g(y) \right)\\
+v^{(k)} & = & prox_{(\frac{t_k}{\theta_k})h} ( v^{(k-1)} - \frac{t_k}{\theta_k}\nabla g(y) )\\
 x^{(k)} & = & (1 - \theta_k)x^{(k-1)} + \theta_kv^{(k)}
 \end{eqnarray*}\\]
 
@@ -447,13 +447,13 @@ unlike in FISTA, \\(y\\) is feasible (in \\(\mathop{dom} h\\)) if we take \\(x^{
 参考 A Fast Dual Proximal Gradient Algorithm for Convex Minimization and Applications by Amir Beck and Marc Teboulle at October 10, 2013
 
 \\[ \begin{eqnarray*}
-(D)   & = & \max_y\left\lbrace q(y) \equiv -f^\ast\left(A^Ty\right)-g^\ast(-y)\right\rbrace,\\
+(D)   & = & \max_y\lbrace q(y) \equiv -f^\ast(A^Ty)-g^\ast(-y)\rbrace,\\
 (D') & = & \min F(y) + G(y),\\
-(P') & = & \min \left\lbrace f(x) + g(z): Ax - z = 0 \right\rbrace.
+(P') & = & \min \lbrace f(x) + g(z): Ax - z = 0 \rbrace.
 \end{eqnarray*}\\]
 
 \\[
-F(y) := f^\ast\left( A^Ty \right), \; \; G(y) :=g^\ast(-y)
+F(y) := f^\ast( A^Ty ), \; \; G(y) :=g^\ast(-y)
 \\]
 
 Initialization: \\(L \geq \frac{\|A\|^2}{\sigma}\\), \\(w_1 = y_0 \in \mathbb{V}\\), \\(t_1 = 1\\).
@@ -461,9 +461,9 @@ Initialization: \\(L \geq \frac{\|A\|^2}{\sigma}\\), \\(w_1 = y_0 \in \mathbb{V}
 General Step \\((k \geq 1)\\):
 
 \\[ \begin{eqnarray*}
-y_k           & = & prox_{\frac{1}{L}G}\left( w_k - \frac{1}{L} \nabla F(w_k) \right)\\
+y_k           & = & prox_{\frac{1}{L}G}( w_k - \frac{1}{L} \nabla F(w_k) )\\
 t_{k+1}   & = & \frac{1 + \sqrt{1 + 4t^2_k}}{2} \\
-w_{k+1} & = & y_k + \left( \frac{t_k - 1}{t_{k+1}} \right) (y_k - y_{k-1}).
+w_{k+1} & = & y_k + ( \frac{t_k - 1}{t_{k+1}} ) (y_k - y_{k-1}).
 \end{eqnarray*}\\]
 
 #### The Fast Dual-Based Proximal Gradient Method (FDPG) ####
@@ -475,9 +475,9 @@ Step \\(0\\). Take \\(w_1 = y_0 \in \mathbb{V}\\), \\(t_1 = 1\\).
 Step \\(k\\). (\\(k \geq 0\\)) Compute
 
 \\[ \begin{eqnarray*}
-u_k           & = & \mathop{argmax}_x \left\lbrace \lt{}x, A^Tw_k\gt{} - f(x) \right\rbrace\\
+u_k           & = & \mathop{argmax}_x \lbrace \lt{}x, A^Tw_k\gt{} - f(x) \rbrace\\
 v_k           & = & prox_{Lg}(Au_k - Lw_k)\\
 y_k           & = & w_k - \frac{1}{L}(au_k - v_k)\\
 t_{k+1}   & = & \frac{1 + \sqrt{1 + 4t^2_k}}{2}\\
-w_{k+1} & = & y_k + \left( \frac{t_k - 1}{t_{k+1}} \right) (y_k - y_{k-1}). \tag*{$\blacksquare$}
+w_{k+1} & = & y_k + ( \frac{t_k - 1}{t_{k+1}} ) (y_k - y_{k-1}). \tag*{$\blacksquare$}
 \end{eqnarray*}\\]
