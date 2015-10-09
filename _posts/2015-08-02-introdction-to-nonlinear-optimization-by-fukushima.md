@@ -35,35 +35,41 @@ categories:
 
 给定函数 \\(f : \Re^n \to [-\infty, +\infty] \\)，称 \\(\Re^{n+1}\\) 的子集
 
-\\[ graph \; f = \left\{ ({\bf x}, \beta)^T \in \Re^{n+1} \mid \beta = f({\bf x}) \right\} , \\]
+\\[
+graph \; f = \left\{ ({\mathbf{}x}, \beta)^T \in \Re^{n+1} \mid \beta = f({\mathbf{}x}) \right\} ,
+\\]
 
 为 \\(f\\) 的**图像**（graph），而称位于 \\(f\\) 的图像上方的点的全体构成的集合
 
-\\[epi \; f =\left\{ ({\bf x}, \beta)^T \in \Re^{n+1} \mid \beta \geqslant f({\bf x}) \right\} \\]
+\\[
+epi \; f =\left\{ ({\mathbf{}x}, \beta)^T \in \Re^{n+1} \mid \beta \geqslant f({\mathbf{}x}) \right\}
+\\]
 
 为 \\(f\\) 的**上图**（epigraph）。若上图 \\(epi \; f\\) 为凸集，则称 \\(f\\) 为**凸函数**(convex function)。
 
 **定理 2.27** 设 \\( \mathcal{I} \\) 为任意非空指标集，而 \\(f_i : \Re^n \to [-\infty, +\infty] \; (i \in \mathcal{I})\\) 均为凸函数，则由
 
-\\[ f({\bf x}) = \sup \left\{ f_i({\bf x}) \mid i \in \mathcal{I} \right\} \\]
+\\[
+f({\mathbf{}x}) = \sup \left\{ f_i({\mathbf{}x}) \mid i \in \mathcal{I} \right\}
+\\]
 
 定义的函数 \\(f : \Re^n \to [-\infty, +\infty] \\) 为凸函数。进一步，若 \\(\mathcal{I}\\) 为有限指标集，每个 \\(f_i\\) 均为正常的凸函数，并且 \\(\cap_{i \in \mathcal{I}} \; dom \; f_i \neq \varnothing \\)，则 \\(f\\) 为正常凸函数。
 
-若对任意收敛于 \\({\bf x}\\) 的点列 \\(\{ {\bf x}^k\} \subseteq \Re^n\\) 均有
+若对任意收敛于 \\({\mathbf{}x}\\) 的点列 \\(\{ {\mathbf{}x}^k\} \subseteq \Re^n\\) 均有
 
-\\[ f({\bf x}) \geqslant \limsup_{k \to \infty}f({\bf x}^k) \\]
+\\[ f({\mathbf{}x}) \geqslant \limsup_{k \to \infty}f({\mathbf{}x}^k) \\]
 
-成立，则称函数 \\(f:\Re^n\to[-\infty,+\infty]\\) 在 \\({\bf x}\\) 处**上半连续**（upper semicontinuous）；反之，当
+成立，则称函数 \\(f:\Re^n\to[-\infty,+\infty]\\) 在 \\({\mathbf{}x}\\) 处**上半连续**（upper semicontinuous）；反之，当
 
-\\[ f({\bf x}) \leqslant \liminf_{k \to \infty}f({\bf x}^k) \\]
+\\[ f({\mathbf{}x}) \leqslant \liminf_{k \to \infty}f({\mathbf{}x}^k) \\]
 
-成立时，称 \\(f\\) 在 \\({\bf x}\\) 处**下半连续**（lower semicontinuous）。若 \\(f\\) 在 \\({\bf x}\\) 处既为上半连续又为下半连续，则称 \\(f\\) 在 \\({\bf x}\\) 处**连续**（continuous）。
+成立时，称 \\(f\\) 在 \\({\mathbf{}x}\\) 处**下半连续**（lower semicontinuous）。若 \\(f\\) 在 \\({\mathbf{}x}\\) 处既为上半连续又为下半连续，则称 \\(f\\) 在 \\({\mathbf{}x}\\) 处**连续**（continuous）。
 
 ### 共轭函数 ###
 
 给定正常凸函数 \\(f:\Re^n \to (-\infty,+\infty]\\)，由
 
-\\[f^\ast({\bf\xi}) = \sup \left\{ \lt{}{\bf x},{\bf\xi}\gt{}-f({\bf x}) \mid {\bf x}\in \Re^n \right\} \\]
+\\[f^\ast({\mathbf{}\xi}) = \sup \left\{ \lt{}{\mathbf{}x},{\mathbf{}\xi}\gt{}-f({\mathbf{}x}) \mid {\mathbf{}x}\in \Re^n \right\} \\]
 
 定义的函数 \\(f^\ast:\Re^n \to [-\infty,+\infty]\\) 称为 \\(f\\) 的**共轭函数**（conjuagate function）。
 
@@ -73,91 +79,91 @@ categories:
 
 设 \\(Y\\) 与 \\(Z\\) 分别为 \\(\Re^n\\) 与 \\(\Re^m\\) 的非空子集，给定以 \\(Y\times Z\\) 为定义域的函数 \\(K:Y\times Z\to[-\infty,+\infty]\\)，定义两个函数 \\(\eta:Y\to[-\infty,+\infty]\\) 与 \\(\zeta:Z\to[-\infty,+\infty]\\) 如下：
 
-\\[\eta({\bf y})=\sup\left\{ K({\bf y},{\bf z}) \mid {\bf z} \in Z\right\} \\]
+\\[\eta({\mathbf{}y})=\sup\left\{ K({\mathbf{}y},{\mathbf{}z}) \mid {\mathbf{}z} \in Z\right\} \\]
 
-\\[\zeta({\bf z})=\inf\left\{ K({\bf y},{\bf z}) \mid {\bf y} \in Y\right\} \\]
+\\[\zeta({\mathbf{}z})=\inf\left\{ K({\mathbf{}y},{\mathbf{}z}) \mid {\mathbf{}y} \in Y\right\} \\]
 
-\\[\min \; \; \eta({\bf y})\\s.t. \; \; \; {\bf y} \in Y\\]
+\\[\min \; \; \eta({\mathbf{}y})\\s.t. \; \; \; {\mathbf{}y} \in Y\\]
 
-\\[\max \; \; \zeta({\bf z})\\s.t. \; \; \; {\bf z} \in Z\\]
+\\[\max \; \; \zeta({\mathbf{}z})\\s.t. \; \; \; {\mathbf{}z} \in Z\\]
 
-**引理 4.1** 对任意 \\({\bf y}\in Y\\) 与 \\({\bf z}\in Z\\) 均有 \\(\zeta({\bf z}) \leqslant \eta({\bf y})\\) 成立。进一步，还有
-\\[\sup\left\{ \zeta({\bf z})\mid {\bf z}\in Z\right\} \leqslant \inf\left\{ \eta({\bf y})\mid {\bf y} \in Y\right\} \\]
+**引理 4.1** 对任意 \\({\mathbf{}y}\in Y\\) 与 \\({\mathbf{}z}\in Z\\) 均有 \\(\zeta({\mathbf{}z}) \leqslant \eta({\mathbf{}y})\\) 成立。进一步，还有
+\\[\sup\left\{ \zeta({\mathbf{}z})\mid {\mathbf{}z}\in Z\right\} \leqslant \inf\left\{ \eta({\mathbf{}y})\mid {\mathbf{}y} \in Y\right\} \\]
 
-**定理 4.1** 点 \\((\bar{\bf y},\bar{\bf z})\in Y\times Z\\) 为函数 \\(K:Y\times Z\to[-\infty,+\infty]\\) 的鞍点的充要条件是 \\(\bar{\bf y}\in Y\\) 与 \\(\bar{\bf z}\in Z\\) 满足
+**定理 4.1** 点 \\((\bar{\mathbf{}y},\bar{\mathbf{}z})\in Y\times Z\\) 为函数 \\(K:Y\times Z\to[-\infty,+\infty]\\) 的鞍点的充要条件是 \\(\bar{\mathbf{}y}\in Y\\) 与 \\(\bar{\mathbf{}z}\in Z\\) 满足
 
-\\[\eta(\bar{\bf y})=\inf\left\{ \eta({\bf y})\mid {\bf y}\in Y\right\} =\sup\left\{ \zeta({\bf z})\mid {\bf z}\in Z\right\} =\zeta(\bar{\bf z})\\]
+\\[\eta(\bar{\mathbf{}y})=\inf\left\{ \eta({\mathbf{}y})\mid {\mathbf{}y}\in Y\right\} =\sup\left\{ \zeta({\mathbf{}z})\mid {\mathbf{}z}\in Z\right\} =\zeta(\bar{\mathbf{}z})\\]
 
 ### Lagrange 对偶问题 ###
 
 考虑如下非线性规划问题：
 
-\\[ \min \; \; f({\bf x}) \\ s.t. \; \; g_i({\bf x}) \leqslant 0, \; \; i=1, \cdots, m\\]
+\\[ \min \; \; f({\mathbf{}x}) \\ s.t. \; \; g_i({\mathbf{}x}) \leqslant 0, \; \; i=1, \cdots, m\\]
 
 其中 \\(f: \Re^n \to \Re\\), \\(g_i: \Re^n \to \Re (i=1, \cdots, m)\\)。
 
-\\[ S = \left\{ x \in \Re^n \mid g_i({\bf x}) \leqslant 0 \text{, } \; \; i=1, \cdots, m\right \}\\]
+\\[ S = \left\{ x \in \Re^n \mid g_i({\mathbf{}x}) \leqslant 0 \text{, } \; \; i=1, \cdots, m\right \}\\]
 
-\\[ L_0({\bf x}, {\bf \lambda}) = \begin{cases}
-        f({\bf x}) + \sum^m_{i=1}\lambda_ig_i({\bf x})\;, & {\bf \lambda} \geqslant {\bf 0}\\
-        -\infty \; , & {\bf \lambda} \ngeqslant {\bf 0}
+\\[ L_0({\mathbf{}x}, {\mathbf{}\lambda}) = \begin{cases}
+        f({\mathbf{}x}) + \sum^m_{i=1}\lambda_ig_i({\mathbf{}x})\;, & {\mathbf{}\lambda} \geqslant {\mathbf{}0}\\
+        -\infty \; , & {\mathbf{}\lambda} \ngeqslant {\mathbf{}0}
     \end{cases}
 \\]
 
-\\[ \theta({\bf x}) = f({\bf x}) + \delta_S({\bf x})\\]
+\\[ \theta({\mathbf{}x}) = f({\mathbf{}x}) + \delta_S({\mathbf{}x})\\]
 
-\\[ \theta({\bf x}) = \sup \left\{ L_0({\bf x}, {\bf \lambda}) \mid {\bf \lambda} \in \Re^m \right\}\\]
+\\[ \theta({\mathbf{}x}) = \sup \left\{ L_0({\mathbf{}x}, {\mathbf{}\lambda}) \mid {\mathbf{}\lambda} \in \Re^m \right\}\\]
 
-\\[ \omega_0({\bf \lambda}) = \inf \left\{ L_0({\bf x}, {\bf \lambda}) \mid {\bf x} \in \Re^n \right\} \\]
+\\[ \omega_0({\mathbf{}\lambda}) = \inf \left\{ L_0({\mathbf{}x}, {\mathbf{}\lambda}) \mid {\mathbf{}x} \in \Re^n \right\} \\]
 
 Constrains relax
 
-\\[ F_0({\bf x}, {\bf u}) = \begin{cases}
-        f({\bf x}),  & {\bf x} \in        S({\bf u}) & \min  & f({\bf x}) & & \\
-        +\infty,      & {\bf x} \notin S({\bf u}) & s.t.      & g_i({\bf x}) & \leqslant u_i, & i = 1, \cdots, m 
+\\[ F_0({\mathbf{}x}, {\mathbf{}u}) = \begin{cases}
+        f({\mathbf{}x}),  & {\mathbf{}x} \in        S({\mathbf{}u}) & \min  & f({\mathbf{}x}) & & \\
+        +\infty,      & {\mathbf{}x} \notin S({\mathbf{}u}) & s.t.      & g_i({\mathbf{}x}) & \leqslant u_i, & i = 1, \cdots, m 
     \end{cases}
 \\]
 
-\\[ S({\bf u}) = \left\{ {\bf x} \in \Re^n \mid g_i({\bf x}) \leqslant u_i, \; i=1, \cdots, m \right\} \\]
+\\[ S({\mathbf{}u}) = \left\{ {\mathbf{}x} \in \Re^n \mid g_i({\mathbf{}x}) \leqslant u_i, \; i=1, \cdots, m \right\} \\]
 
 **引理 4.5** Lagrange 函数 \\(L_0: \Re^{n+m} \to [-\infty, +\infty) \\) 与函数 \\(F_0: \Re^{n+m} \to (-\infty,+\infty]\\) 之间有如下关系成立：
 
-\\[L_0({\bf x}, {\bf \lambda}) = \inf \left\{ F_0({\bf x}, {\bf u}) + \lt{}{\bf \lambda}, {\bf u}\gt{} \mid {\bf u} \in \Re^m \right\}\\]
+\\[L_0({\mathbf{}x}, {\mathbf{}\lambda}) = \inf \left\{ F_0({\mathbf{}x}, {\mathbf{}u}) + \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}u} \in \Re^m \right\}\\]
 
-\\[F_0({\bf x}, {\bf u}) = \sup \left\{ L_0({\bf x}, {\bf \lambda}) - \lt{}{\bf \lambda}, {\bf u}\gt{} \mid {\bf \lambda} \in \Re^m \right\}\\]
+\\[F_0({\mathbf{}x}, {\mathbf{}u}) = \sup \left\{ L_0({\mathbf{}x}, {\mathbf{}\lambda}) - \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}\lambda} \in \Re^m \right\}\\]
 
 ### Lagrange 对偶性的推广 ###
 
-对于原始问题 \\((P)\\)，考虑函数 \\(F: \Re^{n+M} \to (-\infty, +\infty]\\)，使得对任意固定的 \\({\bf x} \in \Re^n\\)，\\(F({\bf x}, \cdot): \Re^M \to (-\infty, +\infty]\\) 均为闭正常凸函数，并且满足
+对于原始问题 \\((P)\\)，考虑函数 \\(F: \Re^{n+M} \to (-\infty, +\infty]\\)，使得对任意固定的 \\({\mathbf{}x} \in \Re^n\\)，\\(F({\mathbf{}x}, \cdot): \Re^M \to (-\infty, +\infty]\\) 均为闭正常凸函数，并且满足
 
-\\[ F({\bf x}, {\bf 0}) = \theta({\bf x}) \text{, } {\bf x} \in \Re^n \\]
+\\[ F({\mathbf{}x}, {\mathbf{}0}) = \theta({\mathbf{}x}) \text{, } {\mathbf{}x} \in \Re^n \\]
 
-**例 4.7** 设 \\(M = m\\)，考虑函数 \\(F_0: \Re^{n+m} \to (-\infty, +\infty]\\)，利用满足 \\(q({\bf 0}) = 0\\) 的闭正常凸函数 \\(q: \Re^m \to (-\infty, +\infty]\\) 定义函数 \\(F: \Re^{n+m} \to (-\infty, +\infty]\\) 如下：
+**例 4.7** 设 \\(M = m\\)，考虑函数 \\(F_0: \Re^{n+m} \to (-\infty, +\infty]\\)，利用满足 \\(q({\mathbf{}0}) = 0\\) 的闭正常凸函数 \\(q: \Re^m \to (-\infty, +\infty]\\) 定义函数 \\(F: \Re^{n+m} \to (-\infty, +\infty]\\) 如下：
 
-\\[ F({\bf x}, {\bf u}) = F_0({\bf x}, {\bf u}) + q({\bf u}) \\]
+\\[ F({\mathbf{}x}, {\mathbf{}u}) = F_0({\mathbf{}x}, {\mathbf{}u}) + q({\mathbf{}u}) \\]
 
 
-\\[ \theta({\bf x}) = f({\bf x}) + \delta_S({\bf x}) \\]
-\\[ \implies F({\bf x}, {\bf u}) \mid F({\bf x}, {\bf 0}) = \theta({\bf x}) \\]
-\\[ \implies L({\bf x}, {\bf \lambda}) = \inf \left\{ F({\bf x}, {\bf u}) + \lt{}{\bf \lambda}, {\bf u}\gt{} \mid {\bf u} \in \Re^M \right\} \\]
-\\[ \implies \omega({\bf \lambda}) = \inf \left\{ L({\bf x}, {\bf \lambda}) \mid {\bf x} \in \Re^n \right\} \\]
+\\[ \theta({\mathbf{}x}) = f({\mathbf{}x}) + \delta_S({\mathbf{}x}) \\]
+\\[ \implies F({\mathbf{}x}, {\mathbf{}u}) \mid F({\mathbf{}x}, {\mathbf{}0}) = \theta({\mathbf{}x}) \\]
+\\[ \implies L({\mathbf{}x}, {\mathbf{}\lambda}) = \inf \left\{ F({\mathbf{}x}, {\mathbf{}u}) + \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}u} \in \Re^M \right\} \\]
+\\[ \implies \omega({\mathbf{}\lambda}) = \inf \left\{ L({\mathbf{}x}, {\mathbf{}\lambda}) \mid {\mathbf{}x} \in \Re^n \right\} \\]
 
 
 ### Fenchel 对偶性 ###
 
-\\[ \min_{\bf x} f({\bf x}) + g({\bf Ax}) \\]
+\\[ \min_{\mathbf{}x} f({\mathbf{}x}) + g({\mathbf{}Ax}) \\]
 
-\\[ \begin{cases} & F({\bf x}, {\bf 0}) = \theta({\bf x}), & x \in \Re^n \\
-& \theta({\bf x}) = f({\bf x}) + g({\bf Ax}) & \end{cases} \\]
+\\[ \begin{cases} & F({\mathbf{}x}, {\mathbf{}0}) = \theta({\mathbf{}x}), & x \in \Re^n \\
+& \theta({\mathbf{}x}) = f({\mathbf{}x}) + g({\mathbf{}Ax}) & \end{cases} \\]
 
-\\[ \implies F({\bf x}, {\bf u}) = f({\bf x}) + g({\bf Ax} + {\bf u}) \\]
-\\[ \begin{eqnarray*} \implies L({\bf x}, {\bf \lambda}) & = & \inf \left\{ f({\bf x}) + g({\bf Ax} + {\bf u}) + \lt{}{\bf \lambda}, {\bf u}\gt{} \mid {\bf u} \in \Re^m \right\} \\
-& = & f({\bf x}) - g^\ast(-{\bf \lambda}) - \lt{}{\bf \lambda}, {\bf Ax}\gt{} \end{eqnarray*}\\]
-\\[ \begin{eqnarray*} \implies \omega({\bf \lambda}) & = & \inf \left\{ f({\bf x} - g^\ast(-{\bf \lambda}) - \lt{}{\bf \lambda}, {\bf Ax}\gt{} \mid {\bf x} \in \Re^n \right\} \\
-& = & -f^\ast({\bf A}^T{\bf \lambda}) - g^\ast(-{\bf \lambda}) \end{eqnarray*}\\]
+\\[ \implies F({\mathbf{}x}, {\mathbf{}u}) = f({\mathbf{}x}) + g({\mathbf{}Ax} + {\mathbf{}u}) \\]
+\\[ \begin{eqnarray*} \implies L({\mathbf{}x}, {\mathbf{}\lambda}) & = & \inf \left\{ f({\mathbf{}x}) + g({\mathbf{}Ax} + {\mathbf{}u}) + \lt{}{\mathbf{}\lambda}, {\mathbf{}u}\gt{} \mid {\mathbf{}u} \in \Re^m \right\} \\
+& = & f({\mathbf{}x}) - g^\ast(-{\mathbf{}\lambda}) - \lt{}{\mathbf{}\lambda}, {\mathbf{}Ax}\gt{} \end{eqnarray*}\\]
+\\[ \begin{eqnarray*} \implies \omega({\mathbf{}\lambda}) & = & \inf \left\{ f({\mathbf{}x} - g^\ast(-{\mathbf{}\lambda}) - \lt{}{\mathbf{}\lambda}, {\mathbf{}Ax}\gt{} \mid {\mathbf{}x} \in \Re^n \right\} \\
+& = & -f^\ast({\mathbf{}A}^T{\mathbf{}\lambda}) - g^\ast(-{\mathbf{}\lambda}) \end{eqnarray*}\\]
 
-\\[ \min_{\bf \lambda} f^\ast\left( {\bf A}^T{\bf \lambda} \right) + g^\ast(-{\bf \lambda})\\]
-\\[ \max_{\bf \lambda} -f^\ast\left({\bf A}^T{\bf \lambda} \right) - g^\ast\left(-{\bf\lambda}\right)\\]
+\\[ \min_{\mathbf{}\lambda} f^\ast\left( {\mathbf{}A}^T{\mathbf{}\lambda} \right) + g^\ast(-{\mathbf{}\lambda})\\]
+\\[ \max_{\mathbf{}\lambda} -f^\ast\left({\mathbf{}A}^T{\mathbf{}\lambda} \right) - g^\ast\left(-{\mathbf{}\lambda}\right)\\]
 
 ## 算法 ##
 
@@ -169,19 +175,19 @@ Constrains relax
 
 The **proximal mapping** (or proximal operator) of a convex function \\(h\\) is
 
-\\[ {\bf prox}_h(x) = \mathop{argmin}_u \left( h(u) + \frac{1}{2} \|u - x\|^2_2 \right)\\]
+\\[ {\mathbf{}prox}_h(x) = \mathop{argmin}_u \left( h(u) + \frac{1}{2} \|u - x\|^2_2 \right)\\]
 
 **examples**
 
-**1.** \\(h(x) = 0: {\bf prox}_h(x) = x\\)
+**1.** \\(h(x) = 0: {\mathbf{}prox}_h(x) = x\\)
 
-**2.** \\(h(x) = I_C(x)\\) (indicator function of \\(C\\)): \\({\bf prox}_h\\) is projection on \\(C\\)
+**2.** \\(h(x) = I_C(x)\\) (indicator function of \\(C\\)): \\({\mathbf{}prox}_h\\) is projection on \\(C\\)
 
-\\[ {\bf prox}_h(x) = P_C(x) = \mathop{argmin}_{u \in C} \|u - x\|^2_2 \\]
+\\[ {\mathbf{}prox}_h(x) = P_C(x) = \mathop{argmin}_{u \in C} \|u - x\|^2_2 \\]
 
-**3.** \\(h(x) = t \|x\|_1\\): \\({\bf prox}_h\\) is shinkage (soft threshold) operation
+**3.** \\(h(x) = t \|x\|_1\\): \\({\mathbf{}prox}_h\\) is shinkage (soft threshold) operation
 
-\\[ {\bf prox}_h = \begin{cases}
+\\[ {\mathbf{}prox}_h = \begin{cases}
     x_i - t & x_i   \geqslant t \\
     0       & |x_i| \leqslant t \\
     x_i + t & x_i   \leqslant -t
@@ -195,11 +201,11 @@ The **proximal mapping** (or proximal operator) of a convex function \\(h\\) is
 
 \\(g\\) convex, differentiable, with **dom** \\(g=\Re^n\\)
 
-\\(h\\) closed, convex, possibly nondifferentiable; \\({\bf prox}_h\\) is inexpensive
+\\(h\\) closed, convex, possibly nondifferentiable; \\({\mathbf{}prox}_h\\) is inexpensive
 
 **proximal gradient algorithm**
 
-\\[ x^{(k)} = {\bf prox}_{t_kh} \left( x^{(k-1)} - t_k \nabla g \left( x^{(k-1)} \right) \right) \\]
+\\[ x^{(k)} = {\mathbf{}prox}_{t_kh} \left( x^{(k-1)} - t_k \nabla g \left( x^{(k-1)} \right) \right) \\]
 
 \\[ t_k \gt{} 0 \text{ is the step size,}\\]
 
@@ -207,7 +213,7 @@ constant or determined by line search
 
 #### Interpretation ####
 
-\\[ x^+ = {\bf prox}_{th} \left( x - t\nabla g(x) \right) \\]
+\\[ x^+ = {\mathbf{}prox}_{th} \left( x - t\nabla g(x) \right) \\]
 
 
 from definition of proximal operator:
@@ -233,11 +239,11 @@ x^+ & = &  \mathop{argmin}_u \left( h(u) + \frac{1}{2t} \left\| u - x + t\nabla 
 
 **iterative soft-thresholding**: \\(h(x) = \|x\|_1\\), i.e., \\( minimize \; \; g(x)+ \| x \|_1\\)
 
-\\[ x^{(k)} = {\bf prox}_{t_kh} \left( x^{(k-1)} - t_k\nabla g\left( x^{(k-1)} \right)  \right) \\]
+\\[ x^{(k)} = {\mathbf{}prox}_{t_kh} \left( x^{(k-1)} - t_k\nabla g\left( x^{(k-1)} \right)  \right) \\]
 
 and
 
-\\[ {\bf prox}_{th}(u)_i = 
+\\[ {\mathbf{}prox}_{th}(u)_i = 
 \begin{cases}
 u_i - t & & u_i \geq t \\
 0       & & -t \leq u_i \leq t \\
