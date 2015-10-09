@@ -36,7 +36,7 @@ categories:
 给定函数 \\(f : \Re^n \to [-\infty, +\infty] \\)，称 \\(\Re^{n+1}\\) 的子集
 
 \\[
-graph \; f = \left\{ ({\mathbf{}x}, \beta)^T \in \Re^{n+1} \mid \beta = f({\mathbf{}x}) \right\} ,
+graph \; f = \left\{ (\mathbf{x}, \beta)^T \in \Re^{n+1} \mid \beta = f(\mathbf{x}) \right\} ,
 \\]
 
 为 \\(f\\) 的**图像**（graph），而称位于 \\(f\\) 的图像上方的点的全体构成的集合
