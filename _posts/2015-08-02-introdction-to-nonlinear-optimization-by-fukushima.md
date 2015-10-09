@@ -83,16 +83,18 @@ f(\mathbf{x}) = \sup \lbrace{} f_i(\mathbf{x}) \mid i \in \mathcal{I} \rbrace{}
 
 \\[\zeta(\mathbf{z})=\inf\lbrace{} K(\mathbf{y},\mathbf{z}) \mid \mathbf{y} \in Y\rbrace{} \\]
 
-\\[\min \; \; \eta(\mathbf{y})\\s.t. \; \; \; \mathbf{y} \in Y\\]
+\\[\min \; \; \eta(\mathbf{y})\\]
+\\[s.t. \; \; \; \mathbf{y} \in Y\\]
 
-\\[\max \; \; \zeta(\mathbf{z})\\s.t. \; \; \; \mathbf{z} \in Z\\]
+\\[\max \; \; \zeta(\mathbf{z})\\]
+\\[s.t. \; \; \; \mathbf{z} \in Z\\]
 
 **引理 4.1** 对任意 \\(\mathbf{y}\in Y\\) 与 \\(\mathbf{z}\in Z\\) 均有 \\(\zeta(\mathbf{z}) \leqslant \eta(\mathbf{y})\\) 成立。进一步，还有
 \\[\sup\lbrace{} \zeta(\mathbf{z})\mid \mathbf{z}\in Z\rbrace{} \leqslant \inf\lbrace{} \eta(\mathbf{y})\mid \mathbf{y} \in Y\rbrace{} \\]
 
-**定理 4.1** 点 \\((\bar\mathbf{y},\bar\mathbf{z})\in Y\times Z\\) 为函数 \\(K:Y\times Z\to[-\infty,+\infty]\\) 的鞍点的充要条件是 \\(\bar\mathbf{y}\in Y\\) 与 \\(\bar\mathbf{z}\in Z\\) 满足
+**定理 4.1** 点 \\((\overline{\mathbf{y}},\overline{\mathbf{z}})\in Y\times Z\\) 为函数 \\(K:Y\times Z\to[-\infty,+\infty]\\) 的鞍点的充要条件是 \\(\overline{\mathbf{y}}\in Y\\) 与 \\(\overline{\mathbf{z}}\in Z\\) 满足
 
-\\[\eta(\bar\mathbf{y})=\inf\lbrace{} \eta(\mathbf{y})\mid \mathbf{y}\in Y\rbrace{} =\sup\lbrace{} \zeta(\mathbf{z})\mid \mathbf{z}\in Z\rbrace{} =\zeta(\bar\mathbf{z})\\]
+\\[\eta(\overline{\mathbf{y}})=\inf\lbrace{} \eta(\mathbf{y})\mid \mathbf{y}\in Y\rbrace{} =\sup\lbrace{} \zeta(\mathbf{z})\mid \mathbf{z}\in Z\rbrace{} =\zeta(\overline{\mathbf{z}})\\]
 
 ### Lagrange 对偶问题 ###
 
