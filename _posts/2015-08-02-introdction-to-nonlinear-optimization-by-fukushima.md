@@ -36,7 +36,7 @@ categories:
 给定函数 \\(f : \Re^n \to [-\infty, +\infty] \\)，称 \\(\Re^{n+1}\\) 的子集
 
 \\[
-graph \; f = \lbrace{} (\mathbf{x}, \beta)^T \in \Re^{n+1} \mid \beta = f(\mathbf{x}) \rbrace{} ,
+graph \; f = \left\{ (\mathbf{x}, \beta)^T \in \Re^{n+1} \mid \beta = f(\mathbf{x}) \right\} ,
 \\]
 
 为 \\(f\\) 的**图像**（graph），而称位于 \\(f\\) 的图像上方的点的全体构成的集合
@@ -107,7 +107,7 @@ f(\mathbf{x}) = \sup \lbrace{} f_i(\mathbf{x}) \mid i \in \mathcal{I} \rbrace{}
 \\[ S = \lbrace{} x \in \Re^n \mid g_i(\mathbf{x}) \leqslant 0 \text{, } \; \; i=1, \cdots, m \rbrace{}\\]
 
 \\[ L_0(\mathbf{x}, \mathbf{\lambda}) = \begin{cases}
-        f(\mathbf{x}) + \sum^m_{i=1}\lambda_ig_i(\mathbf{x})\;, & \mathbf{\lambda} \geqslant \mathbf{0}\\
+        f(\mathbf{x}) + \sum^m_{i=1}\lambda_ig_i(\mathbf{x})\;, & \mathbf{\lambda} \geqslant \mathbf{0} \\
         -\infty \; , & \mathbf{\lambda} \ngeqslant \mathbf{0}
     \end{cases}
 \\]
